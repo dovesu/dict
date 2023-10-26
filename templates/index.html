@@ -1,0 +1,18 @@
+<!DOCTYPE HTML><html><head><meta name="referrer" content="no-referrer" /> <meta content="width=device-width, initial-scale=1" name="viewport" /> <meta charset="UTF-8"><link href="Style.css" rel="stylesheet" type="text/css" /> <title>词典</title></head><body> <h3>词典</h3>
+<hr/>
+<h2>
+<a class="page-navi">
+<form action="/dict" method="post">
+请输入: <input type="text" name="word" id="word" value="" onfocus="setStyle(this.id)">
+<input type="submit" value="搜索">
+</form>
+</a>
+</h2>
+<script>
+function setStyle(x)
+{
+    document.getElementById(x).value="";
+	document.getElementById(x).style.background="yellow";
+}
+</script>
+</html>
